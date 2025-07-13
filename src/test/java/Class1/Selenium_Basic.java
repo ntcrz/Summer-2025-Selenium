@@ -26,7 +26,7 @@ public class Selenium_Basic {
          */
         // 1. Select the location of ChromeDriver
         // System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver.exe"); // Windows
-        System.setProperty("webdriver.chrome.driver", "Drivers/chromedriver"); // Mac
+        System.setProperty("webdriver.chrome.driver", "Drivers/chromedriver.exe"); // Mac
         WebDriver driver = new ChromeDriver();
         /**
          *  Above 2-lines of code are responsible to create an empty chrome-window
@@ -72,7 +72,7 @@ public class Selenium_Basic {
     @Test
     public void verifyFbPageTitle() throws InterruptedException {
         // 1. Launch facebook.com (https://www.facebook.com)
-        System.setProperty("webdriver.chrome.driver", "Drivers/chromedriver"); // Mac
+        System.setProperty("webdriver.chrome.driver", "Drivers/chromedriver.exe"); // Mac
         WebDriver driver = new ChromeDriver();
         driver.get("https://www.facebook.com");
         driver.manage().window().maximize();
